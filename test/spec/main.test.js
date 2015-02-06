@@ -13,6 +13,23 @@ describe('hello', function () {
   });
 });
 
+describe('totalStocks', function () {
+        it('should return a set of the LastPrices', function () {
+          var stocks1 = [
+            { Symbol: 'AAPL', LastPrice: 12.45 },
+            { Symbol: 'MCSK', LastPrice: 23.56 }
+          ];
+
+          var stocks2 = [
+            { Symbol: 'Banana', LastPrice: 0.1 },
+            { Symbol: 'fred', LastPrice: 0.2 }
+          ];
+
+          totalStocks(stocks1).should.be.closeTo(36.01, 0.01);
+          totalStocks(stocks2).should.be.closeTo(0.3, 0.01);
+        });
+});
+
 describe('DOM', function () {
   describe('table', function () {
     beforeEach(function () {

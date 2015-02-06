@@ -46,6 +46,12 @@ describe('DOM', function () {
         addStockToTable(stock);
         $('tr').length.should.equal(1);
       });
+      it('should ignore a not found stock ticker', function () {
+        var stock = {Message: 'No symbol matches found for xxxx.' };
+        $('tr').length.should.equal(0);
+        addStockToTable(stock);
+        $('tr').length.should.equal(0);
+      });
       it('should use stock data in the appended row', function () {
         var stock = { Name: 'SuperCorp', Symbol: 'SCRP', LastPrice: 12.34 },
             $row  = addStockToTable(stock),

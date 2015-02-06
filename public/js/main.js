@@ -10,6 +10,10 @@ function refreshStockPrices(stocks) {
 }
 
 function addStockToTable(stock) {
+  if(stock.Message) {
+      return;
+  }
+
   var $row = $('<tr></tr>');
 
   $row.append('<td>' + stock.Name + '</td>');

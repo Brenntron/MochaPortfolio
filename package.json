@@ -1,0 +1,34 @@
+{
+  "name": "MochaPortfolio",
+  "version": "0.0.1",
+  "description": "This is an app demonstrating front-end Javascript testing with mocha chai karma and phantomjs",
+  "main": "public/index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brenntron/MochaPortfolio.git"
+  },
+  "author": "Brennan \"Brenntron\" Willingham brennanw22@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brenntron/MochaPortfolio/issues"
+  },
+  "homepage": "https://github.com/Brenntron/MochaPortfolio",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^2.1.0",
+    "mocha-phantomjs": "^3.5.3",
+    "phantomjs": "^1.9.15"
+  },
+  "dependencies": {}
+}

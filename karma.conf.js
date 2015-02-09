@@ -34,7 +34,7 @@ module.exports = function(config) {
       'public/js/**/*.js': ['coverage']
     },
 
-    coverageReport: {
+    coverageReporter: {
       type: 'lcov',
       dir: 'coverage/'
     },
